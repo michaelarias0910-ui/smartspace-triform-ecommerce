@@ -8,33 +8,426 @@
     <title>Smartspace Creation | TriForm Desk</title>
 
     <meta name="description"
-        content="Official Smartspace Creation TriForm Desk E-Commerce Website.">
+        content="Discover the Smartspace Creation TriForm Desk, convertible 3-in-1 furniture. Choose your preferred size and color.">
 
     <meta name="theme-color" content="#493020">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <h1>SMARTSPACE CREATION</h1>
-        <p>Official TriForm Desk E-Commerce Website</p>
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement">
+        SMARTSPACE CREATION | FUNCTIONAL FURNITURE FOR MODERN LIVING
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="#home" class="brand">
+                <img
+                    src="assets/logo/triform-desk-logo.png"
+                    alt="TriForm Desk Logo"
+                    class="brand-logo">
+
+                <div class="brand-text">
+                    <strong>SMARTSPACE</strong>
+                    <span>CREATION</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#product">Shop</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#product" class="nav-button">
+                Explore Product
+            </a>
+
+        </div>
     </header>
 
+
+    <!-- HERO SECTION -->
     <main>
-        <h2>Welcome to Smartspace Creation</h2>
 
-        <p>
-            Discover the TriForm Desk,
-            convertible 3-in-1 furniture.
-        </p>
+        <section class="hero" id="home">
 
-        <p>Starting at ₱1,499.00</p>
+            <div class="container hero-content">
 
-        <p>Website development is in progress.</p>
+                <div class="hero-text">
+
+                    <span class="eyebrow">
+                        SMARTSPACE CREATION PRESENTS
+                    </span>
+
+                    <h1>
+                        Transform Your Space
+                        With <span>TriForm Desk</span>
+                    </h1>
+
+                    <p>
+                        Experience functional, versatile and
+                        space-conscious furniture designed
+                        for modern living.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#product" class="btn btn-primary">
+                            Explore TriForm Desk
+                        </a>
+
+                        <a href="#about" class="btn btn-outline">
+                            Discover Our Story
+                        </a>
+
+                    </div>
+
+                    <div class="hero-price">
+                        <span>Starting at</span>
+                        <strong>₱1,499.00</strong>
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+
+                    <div class="image-frame">
+
+                        <img
+                            src="assets/logo/triform-desk-logo.png"
+                            alt="Official TriForm Desk furniture logo">
+
+                    </div>
+
+                    <div class="image-caption">
+                        <strong>TriForm Desk</strong>
+                        <span>Convertible 3-in-1 Furniture</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BENEFITS -->
+        <section class="benefits" id="features">
+
+            <div class="container benefit-grid">
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">✦</span>
+                    <h3>Versatile Design</h3>
+                    <p>Designed for flexible everyday use.</p>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">⌂</span>
+                    <h3>Space Conscious</h3>
+                    <p>Make practical use of your space.</p>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">◆</span>
+                    <h3>Color Choices</h3>
+                    <p>Choose from eight available finishes.</p>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">✓</span>
+                    <h3>Three Sizes</h3>
+                    <p>Choose the configuration you need.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCT SECTION -->
+        <section class="product-section section-padding" id="product">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">OUR FEATURED PRODUCT</span>
+
+                    <h2>Meet the TriForm Desk</h2>
+
+                    <p>
+                        One product. Three size options.
+                        Eight beautiful color selections.
+                    </p>
+
+                </div>
+
+
+                <div class="product-feature">
+
+                    <div class="product-photo">
+                        <img
+                            src="assets/logo/triform-desk-logo.png"
+                            alt="Smartspace Creation TriForm Desk">
+                    </div>
+
+                    <div class="product-details">
+
+                        <span class="product-label">
+                            SMARTSPACE CREATION
+                        </span>
+
+                        <h3>TriForm Desk</h3>
+
+                        <p>
+                            Official Smartspace Creation
+                            convertible 3-in-1 furniture.
+                        </p>
+
+                        <div class="product-options">
+
+                            <h4>Available Sizes and Prices</h4>
+
+                            <div class="size-option">
+                                <span>4-Seater</span>
+                                <strong>₱4,999.00</strong>
+                            </div>
+
+                            <div class="size-option">
+                                <span>2-Seater</span>
+                                <strong>₱2,499.00</strong>
+                            </div>
+
+                            <div class="size-option">
+                                <span>Single (1-Seater)</span>
+                                <strong>₱1,499.00</strong>
+                            </div>
+
+                        </div>
+
+                        <div class="color-options">
+
+                            <h4>Available Colors</h4>
+
+                            <div class="color-list">
+                                <span class="color-chip brown">Brown</span>
+                                <span class="color-chip oak">Natural Oak</span>
+                                <span class="color-chip walnut">Dark Walnut</span>
+                                <span class="color-chip cherry">Cherry Red</span>
+                                <span class="color-chip black">Black Version</span>
+                                <span class="color-chip emerald">Deep Emerald</span>
+                                <span class="color-chip navy">Navy Sailing</span>
+                                <span class="color-chip blush">Petal Blush</span>
+                            </div>
+
+                        </div>
+
+                        <a href="#contact" class="btn btn-primary">
+                            Inquire About TriForm Desk
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROMOTIONAL SECTION -->
+        <section class="promo-section">
+
+            <div class="container promo-content">
+
+                <span class="eyebrow">SMARTER FURNITURE CHOICES</span>
+
+                <h2>
+                    Make Your Space
+                    Work Better.
+                </h2>
+
+                <p>
+                    Discover the TriForm Desk and find
+                    the size and color that complement
+                    your space.
+                </p>
+
+                <a href="#product" class="btn btn-light">
+                    Explore Our Product
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section section-padding" id="about">
+
+            <div class="container about-content">
+
+                <div>
+                    <span class="eyebrow">GET TO KNOW US</span>
+
+                    <h2>About Smartspace Creation</h2>
+                </div>
+
+                <div>
+                    <p>
+                        Smartspace Creation brings you the
+                        TriForm Desk, a convertible 3-in-1
+                        furniture concept designed for
+                        functional and modern spaces.
+                    </p>
+
+                    <p>
+                        Our goal is to provide customers
+                        with practical furniture choices
+                        through a convenient online shopping
+                        experience.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Contact Smartspace Creation →
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section section-padding" id="contact">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">WE ARE HERE TO HELP</span>
+
+                    <h2>Get in Touch</h2>
+
+                    <p>
+                        Have questions about the TriForm Desk?
+                        Contact Smartspace Creation.
+                    </p>
+
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-card">
+                        <span>⌖</span>
+                        <h3>Our Location</h3>
+                        <p>
+                            San Isidro, Sta. Ana,
+                            Pampanga, Philippines
+                        </p>
+                    </div>
+
+                    <div class="contact-card">
+                        <span>☎</span>
+                        <h3>Contact Number</h3>
+                        <a href="tel:09558772161">
+                            09558772161
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <span>✉</span>
+                        <h3>Customer Inquiries</h3>
+                        <p>
+                            Contact us through our
+                            official social media accounts.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://www.facebook.com/share/1JAQx72R6n/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Facebook
+                    </a>
+
+                    <a href="https://www.tiktok.com/@smartspace.creation"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        TikTok
+                    </a>
+
+                    <a href="https://www.instagram.com/smart_spacecreation?mdxt=eDV4OWV5M2YxaXhn"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Instagram
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>© 2026 Smartspace Creation</p>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>SMARTSPACE CREATION</h3>
+
+                <p>
+                    Official TriForm Desk
+                    E-Commerce Website.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#product">Shop</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear">2026</span>
+                    Smartspace Creation.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
     </footer>
 
 </body>
