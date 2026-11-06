@@ -1,0 +1,508 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Smartspace Creation</title>
+
+    <meta name="description"
+        content="Checkout your Smartspace Creation TriForm Desk order.">
+
+    <meta name="theme-color" content="#493020">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <script src="js/checkout.js" defer></script>
+</head>
+
+<body>
+
+    <div class="announcement">
+        SMARTSPACE CREATION | OFFICIAL TRIFORM DESK STORE
+    </div>
+
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="index.html" class="brand">
+                <img
+                    src="assets/logo/triform-desk-logo.png"
+                    alt="Smartspace Creation Logo"
+                    class="brand-logo">
+
+                <div class="brand-text">
+                    <strong>SMARTSPACE</strong>
+                    <span>CREATION</span>
+                </div>
+            </a>
+
+            <nav class="checkout-navigation">
+                <a href="index.html">Home</a>
+                <a href="product.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="checkout.html" class="active">Checkout</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="checkout-heading">
+            <div class="container">
+                <span class="eyebrow">SMARTSPACE CREATION</span>
+                <h1>Customer Checkout</h1>
+                <p>Complete your delivery and order information.</p>
+            </div>
+        </section>
+
+
+        <section class="checkout-section">
+
+            <div class="container">
+
+                <div id="checkoutEmpty" class="checkout-empty" hidden>
+                    <h2>Your cart is empty.</h2>
+                    <p>Please select a TriForm Desk product before checkout.</p>
+                    <a href="product.html" class="checkout-button">
+                        SHOP NOW
+                    </a>
+                </div>
+
+
+                <form id="checkoutForm" class="checkout-layout">
+
+                    <!-- CUSTOMER INFORMATION -->
+
+                    <div class="checkout-main">
+
+                        <section class="checkout-card">
+
+                            <div class="checkout-card-heading">
+                                <span class="step-number">01</span>
+                                <div>
+                                    <h2>Customer Information</h2>
+                                    <p>Enter your contact details.</p>
+                                </div>
+                            </div>
+
+                            <div class="form-grid">
+
+                                <div class="form-field full-width">
+                                    <label for="customerName">
+                                        Full Name *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="customerName"
+                                        name="customerName"
+                                        placeholder="Enter your full name"
+                                        maxlength="100"
+                                        autocomplete="name"
+                                        required>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="customerPhone">
+                                        Mobile Number *
+                                    </label>
+                                    <input
+                                        type="tel"
+                                        id="customerPhone"
+                                        name="customerPhone"
+                                        placeholder="09XXXXXXXXX"
+                                        inputmode="numeric"
+                                        maxlength="11"
+                                        pattern="09[0-9]{9}"
+                                        autocomplete="tel"
+                                        required>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="customerEmail">
+                                        Email Address *
+                                    </label>
+                                    <input
+                                        type="email"
+                                        id="customerEmail"
+                                        name="customerEmail"
+                                        placeholder="example@email.com"
+                                        maxlength="150"
+                                        autocomplete="email"
+                                        required>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- DELIVERY ADDRESS -->
+
+                        <section class="checkout-card">
+
+                            <div class="checkout-card-heading">
+                                <span class="step-number">02</span>
+                                <div>
+                                    <h2>Shipping Information</h2>
+                                    <p>Provide your complete Philippine delivery address.</p>
+                                </div>
+                            </div>
+
+                            <div class="form-grid">
+
+                                <div class="form-field full-width">
+                                    <label for="region">
+                                        Region *
+                                    </label>
+                                    <select id="region" name="region" required>
+                                        <option value="">Select region</option>
+                                        <option value="Region III - Central Luzon">
+                                            Region III - Central Luzon
+                                        </option>
+                                        <option value="NCR">
+                                            NCR
+                                        </option>
+                                        <option value="Other Philippine Region">
+                                            Other Philippine Region
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="province">
+                                        Province *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="province"
+                                        name="province"
+                                        placeholder="e.g. Pampanga"
+                                        maxlength="100"
+                                        required>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="city">
+                                        City / Municipality *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="city"
+                                        name="city"
+                                        placeholder="Enter city or municipality"
+                                        maxlength="100"
+                                        required>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="barangay">
+                                        Barangay *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="barangay"
+                                        name="barangay"
+                                        placeholder="Enter barangay"
+                                        maxlength="100"
+                                        required>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="postalCode">
+                                        Postal Code *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="postalCode"
+                                        name="postalCode"
+                                        placeholder="e.g. 2022"
+                                        inputmode="numeric"
+                                        pattern="[0-9]{4}"
+                                        maxlength="4"
+                                        required>
+                                </div>
+
+                                <div class="form-field full-width">
+                                    <label for="streetAddress">
+                                        House Number, Street and Subdivision *
+                                    </label>
+                                    <textarea
+                                        id="streetAddress"
+                                        name="streetAddress"
+                                        rows="3"
+                                        maxlength="300"
+                                        placeholder="House number, street, subdivision or village"
+                                        required></textarea>
+                                </div>
+
+                                <div class="form-field full-width">
+                                    <label for="deliveryInstructions">
+                                        Delivery Instructions (Optional)
+                                    </label>
+                                    <textarea
+                                        id="deliveryInstructions"
+                                        name="deliveryInstructions"
+                                        rows="2"
+                                        maxlength="500"
+                                        placeholder="Landmarks, special instructions, etc."></textarea>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- PAYMENT METHOD -->
+
+                        <section class="checkout-card">
+
+                            <div class="checkout-card-heading">
+                                <span class="step-number">03</span>
+                                <div>
+                                    <h2>Payment Method</h2>
+                                    <p>Select your preferred payment option.</p>
+                                </div>
+                            </div>
+
+                            <div class="payment-options">
+
+                                <label class="payment-option">
+                                    <input
+                                        type="radio"
+                                        name="paymentMethod"
+                                        value="GCash"
+                                        required>
+                                    <span class="payment-icon">G</span>
+                                    <span class="payment-details">
+                                        <strong>GCash</strong>
+                                        <small>Online payment</small>
+                                    </span>
+                                </label>
+
+                                <label class="payment-option">
+                                    <input
+                                        type="radio"
+                                        name="paymentMethod"
+                                        value="Maya">
+                                    <span class="payment-icon">M</span>
+                                    <span class="payment-details">
+                                        <strong>Maya</strong>
+                                        <small>Online payment</small>
+                                    </span>
+                                </label>
+
+                                <label class="payment-option">
+                                    <input
+                                        type="radio"
+                                        name="paymentMethod"
+                                        value="PayPal">
+                                    <span class="payment-icon">P</span>
+                                    <span class="payment-details">
+                                        <strong>PayPal</strong>
+                                        <small>Online payment</small>
+                                    </span>
+                                </label>
+
+                                <label class="payment-option">
+                                    <input
+                                        type="radio"
+                                        name="paymentMethod"
+                                        value="Credit Card">
+                                    <span class="payment-icon">CC</span>
+                                    <span class="payment-details">
+                                        <strong>Credit Card</strong>
+                                        <small>Gateway payment</small>
+                                    </span>
+                                </label>
+
+                                <label class="payment-option">
+                                    <input
+                                        type="radio"
+                                        name="paymentMethod"
+                                        value="Debit Card">
+                                    <span class="payment-icon">DC</span>
+                                    <span class="payment-details">
+                                        <strong>Debit Card</strong>
+                                        <small>Gateway payment</small>
+                                    </span>
+                                </label>
+
+                                <label class="payment-option">
+                                    <input
+                                        type="radio"
+                                        name="paymentMethod"
+                                        value="Cash on Delivery">
+                                    <span class="payment-icon">₱</span>
+                                    <span class="payment-details">
+                                        <strong>Cash on Delivery</strong>
+                                        <small>Pay upon delivery</small>
+                                    </span>
+                                </label>
+
+                            </div>
+
+                            <div class="payment-notice">
+                                <strong>Payment information</strong>
+                                <p>
+                                    Online payment options require an
+                                    approved payment gateway integration.
+                                    Selecting a method does not constitute
+                                    a successful payment.
+                                </p>
+                            </div>
+
+                        </section>
+
+
+                        <!-- POLICIES -->
+
+                        <section class="checkout-card">
+
+                            <div class="checkout-card-heading">
+                                <span class="step-number">04</span>
+                                <div>
+                                    <h2>Order Policies</h2>
+                                    <p>Please review before submitting.</p>
+                                </div>
+                            </div>
+
+                            <label class="policy-checkbox">
+                                <input
+                                    type="checkbox"
+                                    id="agreeShipping"
+                                    required>
+                                <span>
+                                    I have reviewed and agree to the
+                                    <a href="shipping-policy.html" target="_blank">
+                                        Shipping and Delivery Policy
+                                    </a>.
+                                </span>
+                            </label>
+
+                            <label class="policy-checkbox">
+                                <input
+                                    type="checkbox"
+                                    id="agreeReturn"
+                                    required>
+                                <span>
+                                    I have reviewed and agree to the
+                                    <a href="return-policy.html" target="_blank">
+                                        Return and Exchange Policy
+                                    </a>.
+                                </span>
+                            </label>
+
+                            <label class="policy-checkbox">
+                                <input
+                                    type="checkbox"
+                                    id="agreePrivacy"
+                                    required>
+                                <span>
+                                    I consent to the processing of my
+                                    personal information for order fulfillment
+                                    under the
+                                    <a href="privacy-policy.html" target="_blank">
+                                        Privacy Policy
+                                    </a>.
+                                </span>
+                            </label>
+
+                        </section>
+
+                    </div>
+
+
+                    <!-- ORDER SUMMARY -->
+
+                    <aside class="checkout-summary">
+
+                        <h2>Your Order</h2>
+
+                        <div id="checkoutItems" class="checkout-items">
+                            <!-- Generated by checkout.js -->
+                        </div>
+
+                        <div class="checkout-summary-line">
+                            <span>Total Quantity</span>
+                            <strong id="checkoutQuantity">0</strong>
+                        </div>
+
+                        <div class="checkout-summary-line">
+                            <span>Product Subtotal</span>
+                            <strong id="checkoutSubtotal">₱0.00</strong>
+                        </div>
+
+                        <div class="checkout-summary-line">
+                            <span>Shipping Fee</span>
+                            <strong id="checkoutShipping">Pending</strong>
+                        </div>
+
+                        <div class="checkout-total">
+                            <span>Estimated Total</span>
+                            <strong id="checkoutTotal">₱0.00 + Shipping</strong>
+                        </div>
+
+                        <p class="checkout-summary-note">
+                            The final shipping fee and payable amount
+                            must be confirmed before payment.
+                        </p>
+
+                        <button
+                            type="submit"
+                            class="place-order-button"
+                            id="placeOrderButton">
+
+                            SUBMIT ORDER REQUEST
+
+                        </button>
+
+                        <p
+                            id="checkoutMessage"
+                            class="checkout-message"
+                            role="status"
+                            aria-live="polite">
+                        </p>
+
+                        <div class="store-contact">
+                            <strong>Need assistance?</strong>
+                            <p>Smartspace Creation</p>
+                            <p>San Isidro, Sta. Ana, Pampanga</p>
+                            <p>09558772161</p>
+                        </div>
+
+                    </aside>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div>
+                <h3>SMARTSPACE CREATION</h3>
+                <p>Official TriForm Desk E-Commerce Website.</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © <span id="currentYear">2026</span>
+                    Smartspace Creation. All Rights Reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

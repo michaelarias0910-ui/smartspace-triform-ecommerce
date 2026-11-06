@@ -519,28 +519,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // CHECKOUT BUTTON
     checkoutButton.addEventListener(
-        "click",
-        function () {
+    "click",
+    function () {
 
-            const cart = getCart();
+        const cart = getCart();
 
-            if (cart.length === 0) {
-
-                alert("Your shopping cart is empty.");
-
-                return;
-
-            }
-
-            // Checkout will be implemented in Phase 5.
-            alert(
-    "Your cart is ready! Checkout and customer information " +
-    "will be activated in Phase 5."
-);
-
+        if (cart.length === 0) {
+            alert("Your shopping cart is empty.");
+            return;
         }
 
-    );
+        window.location.href = "checkout.html";
+
+    }
+);
+
 
 
     // AUTOMATIC COPYRIGHT YEAR
@@ -577,3 +570,8 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("--------------------------------");
 
 });
+
+
+JSON.parse(
+    localStorage.getItem("smartspace_triform_orders")
+);
