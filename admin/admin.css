@@ -1,0 +1,314 @@
+
+/* SMARTSPACE ADMINISTRATOR DESIGN */
+
+.admin-login-body {
+    min-height: 100vh;
+    background: #F8F1E7;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.admin-login-wrapper {
+    width: 100%;
+    max-width: 440px;
+}
+
+.admin-login-card {
+    background: #FFFDF9;
+    padding: 42px 35px;
+    border-radius: 12px;
+    box-shadow: 0 15px 45px rgba(73,48,32,.12);
+    text-align: center;
+}
+
+.admin-logo {
+    width: 105px;
+    height: 105px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.admin-eyebrow {
+    color: #B1844D;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.admin-login-card h1 {
+    color: #493020;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+.admin-description {
+    color: #806D5D;
+    font-size: 12px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.admin-field {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.admin-field label {
+    display: block;
+    color: #493020;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.admin-field input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #DCCDBD;
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+}
+
+.admin-field input:focus {
+    border-color: #795039;
+}
+
+#adminLoginButton {
+    width: 100%;
+    padding: 15px;
+    background: #493020;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#adminLoginButton:hover {
+    background: #795039;
+}
+
+#adminLoginButton:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+#adminLoginMessage {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.back-to-store {
+    display: inline-block;
+    margin-top: 25px;
+    color: #795039;
+    font-size: 12px;
+}
+
+
+/* =====================================
+   ADMINISTRATOR DASHBOARD
+===================================== */
+
+.dashboard-body {
+    min-height: 100vh;
+    background: #F8F1E7;
+}
+
+.dashboard-header {
+    background: #493020;
+    color: #FFFDF9;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard-header div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dashboard-header strong {
+    letter-spacing: 1px;
+}
+
+.dashboard-header span {
+    font-size: 10px;
+    color: #E6D9C9;
+}
+
+.dashboard-header button,
+.panel-heading button {
+    background: #B1844D;
+    border: none;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.dashboard-container {
+    width: 92%;
+    max-width: 1300px;
+    margin: 40px auto;
+}
+
+.dashboard-title {
+    margin-bottom: 25px;
+}
+
+.dashboard-title p {
+    color: #B1844D;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.dashboard-title h1 {
+    color: #493020;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.dashboard-title span {
+    color: #806D5D;
+    font-size: 12px;
+}
+
+.dashboard-statistics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: #FFFDF9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(73,48,32,.06);
+}
+
+.stat-card span {
+    display: block;
+    color: #806D5D;
+    font-size: 12px;
+}
+
+.stat-card strong {
+    display: block;
+    color: #493020;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-top: 12px;
+}
+
+.dashboard-panel {
+    background: #FFFDF9;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.panel-heading h2 {
+    color: #493020;
+    font-family: Georgia, serif;
+    font-size: 21px;
+}
+
+.table-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.admin-orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+.admin-orders-table th,
+.admin-orders-table td {
+    text-align: left;
+    padding: 15px 12px;
+    border-bottom: 1px solid #EEE4D8;
+    font-size: 11px;
+}
+
+.admin-orders-table th {
+    color: #795039;
+    background: #F8F1E7;
+}
+
+.admin-orders-table td {
+    color: #493020;
+}
+
+.dashboard-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.dashboard-links a {
+    background: #493020;
+    color: white;
+    padding: 18px 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.dashboard-links a:hover {
+    background: #795039;
+}
+
+#dashboardMessage {
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #B42318;
+}
+
+@media(max-width: 800px) {
+    .dashboard-statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 480px) {
+    .dashboard-container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .dashboard-title h1 {
+        font-size: 25px;
+    }
+
+    .dashboard-panel {
+        padding: 15px;
+    }
+}

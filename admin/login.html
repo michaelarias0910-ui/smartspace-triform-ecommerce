@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administrator Login | Smartspace Creation</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="admin.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase-client.js" defer></script>
+    <script src="login.js" defer></script>
+</head>
+
+<body class="admin-login-body">
+
+    <main class="admin-login-wrapper">
+
+        <section class="admin-login-card">
+
+            <img
+                src="../assets/logo/triform-desk-logo.png"
+                alt="Smartspace Creation"
+                class="admin-logo">
+
+            <p class="admin-eyebrow">SMARTSPACE CREATION</p>
+
+            <h1>Administrator Login</h1>
+
+            <p class="admin-description">
+                Access the TriForm Desk Store Management System.
+            </p>
+
+            <form id="adminLoginForm">
+
+                <div class="admin-field">
+                    <label for="adminEmail">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="adminEmail"
+                        placeholder="Administrator email"
+                        autocomplete="username"
+                        required>
+                </div>
+
+                <div class="admin-field">
+                    <label for="adminPassword">Password</label>
+
+                    <input
+                        type="password"
+                        id="adminPassword"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required>
+                </div>
+
+                <button type="submit" id="adminLoginButton">
+                    SIGN IN
+                </button>
+
+                <p
+                    id="adminLoginMessage"
+                    role="status"
+                    aria-live="polite">
+                </p>
+
+            </form>
+
+            <a href="../index.html" class="back-to-store">
+                ← Return to Store
+            </a>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Store Dashboard | Smartspace Creation</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase-client.js" defer></script>
+    <script src="dashboard.js" defer></script>
+</head>
+
+<body class="dashboard-body">
+
+    <header class="dashboard-header">
+
+        <div>
+            <strong>SMARTSPACE CREATION</strong>
+            <span>TRIFORM DESK ADMINISTRATION</span>
+        </div>
+
+        <button id="logoutButton">LOG OUT</button>
+
+    </header>
+
+    <main class="dashboard-container">
+
+        <div class="dashboard-title">
+            <div>
+                <p>STORE MANAGEMENT</p>
+                <h1>Administrator Dashboard</h1>
+                <span id="adminWelcome">Loading administrator...</span>
+            </div>
+        </div>
+
+        <p id="dashboardMessage" role="status"></p>
+
+        <section class="dashboard-statistics">
+
+            <article class="stat-card">
+                <span>Total Orders</span>
+                <strong id="totalOrders">0</strong>
+            </article>
+
+            <article class="stat-card">
+                <span>Pending Orders</span>
+                <strong id="pendingOrders">0</strong>
+            </article>
+
+            <article class="stat-card">
+                <span>Processing Orders</span>
+                <strong id="processingOrders">0</strong>
+            </article>
+
+            <article class="stat-card">
+                <span>Completed Orders</span>
+                <strong id="completedOrders">0</strong>
+            </article>
+
+        </section>
+
+        <section class="dashboard-panel">
+
+            <div class="panel-heading">
+                <h2>Recent Customer Orders</h2>
+                <button id="refreshOrders">REFRESH</button>
+            </div>
+
+            <div class="table-scroll">
+
+                <table class="admin-orders-table">
+
+                    <thead>
+                        <tr>
+                            <th>Order Number</th>
+                            <th>Customer ID</th>
+                            <th>Payment</th>
+                            <th>Order Status</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="ordersTableBody">
+                        <tr>
+                            <td colspan="6">Loading orders...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <section class="dashboard-links">
+
+            <a href="orders.html">ORDER MANAGEMENT</a>
+            <a href="products.html">PRODUCT MANAGEMENT</a>
+            <a href="tracking.html">DELIVERY TRACKING</a>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
