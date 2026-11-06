@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop TriForm Desk | Smartspace Creation</title>
+
+    <meta name="description"
+        content="Choose your TriForm Desk size and color. Shop Smartspace Creation.">
+
+    <meta name="theme-color" content="#493020">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+
+    <script src="js/product.js" defer></script>
+</head>
+
+<body>
+
+    <div class="announcement">
+        SMARTSPACE CREATION | OFFICIAL TRIFORM DESK STORE
+    </div>
+
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="index.html" class="brand">
+                <img
+                    src="assets/logo/triform-desk-logo.png"
+                    alt="TriForm Desk Logo"
+                    class="brand-logo">
+
+                <div class="brand-text">
+                    <strong>SMARTSPACE</strong>
+                    <span>CREATION</span>
+                </div>
+            </a>
+
+            <nav class="product-nav">
+                <a href="index.html">Home</a>
+                <a href="product.html" class="active">Shop</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+
+            <a href="cart.html" class="cart-link">
+                <span>Cart</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="catalog-heading">
+            <div class="container">
+                <span class="eyebrow">SMARTSPACE CREATION COLLECTION</span>
+                <h1>Discover the TriForm Desk</h1>
+                <p>
+                    Choose your preferred size, color and quantity.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="catalog-section">
+
+            <div class="container">
+
+                <div class="product-layout">
+
+                    <!-- PRODUCT IMAGE -->
+
+                    <div class="catalog-image-panel">
+
+                        <div class="main-product-image">
+
+                            <img
+                                id="productImage"
+                                src="assets/logo/triform-desk-logo.png"
+                                alt="TriForm Desk">
+
+                            <span class="image-label">
+                                OFFICIAL PRODUCT
+                            </span>
+
+                        </div>
+
+                        <div class="image-caption">
+                            <strong>TriForm Desk</strong>
+                            <span id="imageVariantLabel">
+                                Brown · 4-Seater
+                            </span>
+                        </div>
+
+                        <p class="image-note">
+                            Product photographs will be updated
+                            with the actual variant images.
+                        </p>
+
+                    </div>
+
+
+                    <!-- PRODUCT SELECTION -->
+
+                    <div class="catalog-details">
+
+                        <span class="product-label">
+                            SMARTSPACE CREATION
+                        </span>
+
+                        <h2>TriForm Desk</h2>
+
+                        <p class="catalog-description">
+                            Convertible 3-in-1 furniture designed
+                            for practical and modern spaces.
+                        </p>
+
+
+                        <!-- PRICE -->
+
+                        <div class="catalog-price">
+                            <span>Product Price</span>
+                            <strong id="productPrice">₱4,999.00</strong>
+                        </div>
+
+
+                        <!-- SIZE SELECTION -->
+
+                        <div class="selection-group">
+
+                            <div class="selection-heading">
+                                <label>Select Size</label>
+                                <span id="selectedSizeLabel">4-Seater</span>
+                            </div>
+
+                            <div class="size-selector">
+
+                                <button
+                                    type="button"
+                                    class="size-button selected"
+                                    data-size="4-seater">
+                                    <strong>4-Seater</strong>
+                                    <span>₱4,999</span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="size-button"
+                                    data-size="2-seater">
+                                    <strong>2-Seater</strong>
+                                    <span>₱2,499</span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="size-button"
+                                    data-size="single">
+                                    <strong>Single</strong>
+                                    <span>₱1,499</span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- COLOR SELECTION -->
+
+                        <div class="selection-group">
+
+                            <div class="selection-heading">
+                                <label>Select Color</label>
+                                <span id="selectedColorLabel">Brown</span>
+                            </div>
+
+                            <div class="color-selector" id="colorSelector">
+
+                                <button
+                                    type="button"
+                                    class="color-button selected"
+                                    data-color="brown"
+                                    aria-label="Brown"
+                                    title="Brown">
+                                    <span style="--swatch:#795039"></span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="color-button"
+                                    data-color="natural-oak"
+                                    aria-label="Natural Oak"
+                                    title="Natural Oak">
+                                    <span style="--swatch:#C69B67"></span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="color-button"
+                                    data-color="dark-walnut"
+                                    aria-label="Dark Walnut"
+                                    title="Dark Walnut">
+                                    <span style="--swatch:#493020"></span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="color-button"
+                                    data-color="cherry-red"
+                                    aria-label="Cherry Red"
+                                    title="Cherry Red">
+                                    <span style="--swatch:#8D292D"></span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="color-button"
+                                    data-color="black-version"
+                                    aria-label="Black Version"
+                                    title="Black Version">
+                                    <span style="--swatch:#242424"></span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="color-button"
+                                    data-color="deep-emerald"
+                                    aria-label="Deep Emerald"
+                                    title="Deep Emerald">
+                                    <span style="--swatch:#155B45"></span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="color-button"
+                                    data-color="navy-sailing"
+                                    aria-label="Navy Sailing"
+                                    title="Navy Sailing">
+                                    <span style="--swatch:#18375B"></span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="color-button"
+                                    data-color="petal-blush"
+                                    aria-label="Petal Blush"
+                                    title="Petal Blush">
+                                    <span style="--swatch:#E7A6B5"></span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- QUANTITY -->
+
+                        <div class="selection-group">
+
+                            <label for="quantity">Quantity</label>
+
+                            <div class="quantity-control">
+
+                                <button
+                                    type="button"
+                                    id="decreaseQuantity"
+                                    aria-label="Decrease quantity">
+                                    −
+                                </button>
+
+                                <input
+                                    type="number"
+                                    id="quantity"
+                                    value="1"
+                                    min="1"
+                                    max="99">
+
+                                <button
+                                    type="button"
+                                    id="increaseQuantity"
+                                    aria-label="Increase quantity">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SUBTOTAL -->
+
+                        <div class="subtotal-row">
+                            <span>Subtotal</span>
+                            <strong id="subtotal">₱4,999.00</strong>
+                        </div>
+
+
+                        <!-- CART ACTION -->
+
+                        <button
+                            type="button"
+                            class="add-cart-button"
+                            id="addToCart">
+
+                            ADD TO CART
+
+                        </button>
+
+                        <p
+                            class="cart-message"
+                            id="cartMessage"
+                            role="status"
+                            aria-live="polite">
+                        </p>
+
+                        <div class="catalog-assurance">
+                            <span>✓ Philippine delivery coverage</span>
+                            <span>✓ Multiple payment options planned</span>
+                            <span>✓ Order tracking planned</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCT INFORMATION -->
+
+        <section class="catalog-information">
+
+            <div class="container">
+
+                <h2>Why Choose TriForm Desk?</h2>
+
+                <p>
+                    Explore a convertible 3-in-1 furniture concept
+                    from Smartspace Creation.
+                </p>
+
+                <div class="information-grid">
+
+                    <div>
+                        <strong>3 Size Options</strong>
+                        <p>4-Seater, 2-Seater and Single.</p>
+                    </div>
+
+                    <div>
+                        <strong>8 Color Choices</strong>
+                        <p>Find a finish that suits your space.</p>
+                    </div>
+
+                    <div>
+                        <strong>24 Combinations</strong>
+                        <p>Choose from the available configurations.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>SMARTSPACE CREATION</h3>
+                <p>Official TriForm Desk E-Commerce Website.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="product.html">Shop</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © <span id="currentYear">2026</span>
+                    Smartspace Creation. All Rights Reserved.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
